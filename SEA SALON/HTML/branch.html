@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch</title>
+    <link rel="stylesheet" href="../CSS/branch.css">
+    <script src="https://kit.fontawesome.com/2642963cc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ======== NAVBAR ========= -->
+    <header>
+        <div class="container">
+            <h1>SEA SALON</h1>
+            <p>Admin</p>
+        </div>
+    </header>
+    <div class="reservation-dashboard">
+        <!-- ======== DASHBOARD ========= -->
+        <div class="dashboard">
+            <div class="dash-container">
+                <div class="reservation-button"><a href="../HTML/service.html"><i class="fa-solid fa-scissors"></i> Service</a></i></div>
+                <div class="reservation-button"><a href="../HTML/branch.html"><i class="fa-solid fa-plus"></i> Branch</a></i></div>
+                <div class="reservation-button"><a href="../HTML/branches.html"><i class="fa-solid fa-store"></i> Branches</a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/service.html"><i class="fa-solid fa-scissors"></i></a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/branch.html"><i class="fa-solid fa-plus"></i></a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/branches.html"><i class="fa-solid fa-store"></i></a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/login.html"><span><i class="fa-solid fa-arrow-right-from-bracket fa-flip-horizontal"></i></span></a></div>
+            </div>
+            <div class="dash-logout">
+                <div class="reservation-button-logout"><a href="../HTML/login.html"><i class="fa-solid fa-arrow-right-from-bracket fa-flip-horizontal"></i> Logout</a></div>
+            </div>
+        </div>      
+        <!-- ======== ADD BRANCH FORM ========= -->
+        <div class="container-branch">
+            <h1>Add Branch</h1>
+            <form id="branchForm">
+                <label for="branchName">Nama Branch:</label>
+                <input type="text" id="branchName" name="branchName" required>
+    
+                <label for="branchLocation">Lokasi Branch:</label>
+                <input type="text" id="branchLocation" name="branchLocation" required>
+    
+                <label for="openingTime">Waktu Buka:</label>
+                <input type="time" id="openingTime" name="openingTime" required>
+    
+                <label for="closingTime">Waktu Tutup:</label>
+                <input type="time" id="closingTime" name="closingTime" required>
+    
+                <label for="serviceType">Jenis Service:</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="Haircuts and Styling, Manicure and Pedicure, Facial Treatments">Service Type 1</option>
+                    <option value="Messages, Laser Skin Whitening, Hair Coloring">Service Type 2</option>
+                    <option value="Tanning, Waxing, Manicure and Pedicure">Service Type 3</option>
+                    <option value="Messages, Haircuts and Styling, Waxing">Service Type 4</option>
+                </select>   
+                <button type="submit">Tambah Branch</button>
+            </form>
+        </div>
+    </div>
+    <!-- ======== ADD BRANCH SCRIPT ========= -->
+    <script src="../JS/branch.js"></script>
+</body>
+</html>

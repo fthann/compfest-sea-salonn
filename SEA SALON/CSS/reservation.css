@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9fcff;
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    background-image: url(../images/Background-Reservation\ \(1\).png);
+}
+
+/* ======= NAVBAR =========*/
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container span {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+/* ======= END =========*/
+
+.reservation-dashboard {
+    display: flex;
+}
+
+/* ======= DASHBOARD =========*/
+
+.dashboard {
+     background-color: white;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 300px;
+     height: 500px;
+     border-radius: 0px 0px 10px 0px;
+}
+
+.dash-container {
+    margin: 40px;
+}
+
+.reservation-button {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.reservation-button#icon{
+    display: none;
+}
+
+.reservation-button:hover {
+    background-color: #007bff10;
+}
+
+.reservation-button a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.reservation-button a i {
+    margin-right: 10px;
+}
+
+/* ======= RESERVATION FORM =========*/
+
+.container-reserv {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border: 2px solid #007BFF;
+}
+
+.container-reserv h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Outfit", sans-serif;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007bffd8;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    /* === NAVBAR === */
+
+    header .container h1 {
+        font-size: 90%;
+    }
+
+    header .container span {
+        display: block;
+    }
+
+    header .container span a {
+        color: white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* === DASHBOARD === */
+
+    .dashboard {
+        width: 100px;
+        height: fit-content;
+    }
+
+    .dash-container {
+        margin: 10px;
+    }
+    
+    .reservation-button {
+        display: none;
+    }
+
+    .reservation-button span {
+        color: #ff4f60;
+    }
+
+    .reservation-button span:hover {
+        color: #ff4f61de;
+    }
+
+    .reservation-button#icon {
+        display: block;
+    }
+
+    /* === RESERVATION FORM === */
+
+    .container-reserv {
+        margin: 0;
+        scale: 90%;
+    }
+}

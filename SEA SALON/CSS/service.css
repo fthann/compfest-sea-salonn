@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9fcff;
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    background-image: url(../images/Background-Reservation\ \(1\).png);
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container p {
+    font-weight: 600;
+}
+
+/* ========== DASHBOARD ===========*/
+
+.reservation-dashboard {
+    display: flex;
+}
+
+.dashboard {
+     background-color: white;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 300px;
+     height: 500px;
+     border-radius: 0px 0px 10px 0px;
+}
+
+.dash-container {
+    margin: 40px;
+}
+
+.dash-logout {
+    margin: 40px;
+    margin-top: 160px;
+}
+
+.reservation-button {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.reservation-button#icon {
+    display: none;
+}
+
+.reservation-button-logout{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.reservation-button a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.reservation-button:hover {
+    background-color: #007bff10;
+}
+
+.reservation-button-logout:hover {
+    background-color: #ff4f610e;
+}
+
+.reservation-button-logout a {
+    text-decoration: none;
+    color: #ff4f60;
+}
+
+.reservation-button-logout a i {
+    margin-right: 10px;
+}
+
+
+.reservation-button a i {
+    margin-right: 10px;
+}
+
+/* ========== SERVICE DI ADMIN PAGE =========== */
+
+.container-servicee {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 55%;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    border: 2px solid #007BFF;
+}
+
+.container-servicee h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555; 
+}
+
+input, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Outfit", sans-serif;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+}
+
+button:hover {
+    background-color: #007bffd8;
+}
+
+.service-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.delete-button {
+    background-color: #ff4f60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.delete-button:hover {
+    background-color: #ff4f61de;
+}
+
+/* ======== RESPONSIVE ========= */
+
+@media only screen and (max-width: 800px) {
+
+    /* === NAVBAR === */
+
+    header .container h1 {
+        font-size: 90%;
+    }
+
+    header .container span {
+        display: block;
+    }
+
+    header .container span a {
+        color: white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* === DASHBOARD === */
+
+    .dashboard {
+        width: 85px;
+        height: fit-content;
+    }
+
+    .dash-container {
+        margin: 10px;
+    }
+
+    .dash-logout {
+        display: none;
+    }
+    
+    .reservation-button {
+        display: none;
+    }
+
+    .reservation-button span {
+        color: #ff4f60;
+    }
+
+    .reservation-button span:hover {
+        color: #ff4f61de;
+    }
+
+    .reservation-button#icon {
+        display: block;
+    }
+
+    /* === SERVICE === */
+
+    .reservation-dashboard .container-servicee {
+       margin: 0;
+       margin-top: 20px;
+       margin-left: 20px;
+    }
+
+    .reservation-dashboard .container-servicee h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+}    

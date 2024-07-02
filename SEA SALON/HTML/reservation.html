@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="../CSS/reservation.css">
+    <script src="https://kit.fontawesome.com/2642963cc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ======== NAVBAR ======= -->
+    <header>
+        <div class="container">
+            <h1>SEA SALON</h1>
+            <nav>
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="../HTML/index.html#service">Service</a></li>
+                    <li><a href="../HTML/index.html#branch">Branch</a></li>
+                    <li><a href="../HTML/index.html#about">About</a></li>
+                    <li><a href="../HTML/login.html">Log out</a></li>
+                </ul>
+            </nav>
+            <span><a href="../HTML/index.html"><i class="fa-solid fa-house"></i></a></span>
+        </div>
+    </header>
+        <div class="reservation-dashboard">
+        <!-- ======== DASHBOARD ======= -->
+        <div class="dashboard">
+            <div class="dash-container">
+                <div class="reservation-button"><a href="../HTML/reservation.html"><i class="fa-solid fa-paper-plane"></i> Reservation</a></i></div>
+                <div class="reservation-button"><a href="../HTML/history.html"><i class="fa-solid fa-clock-rotate-left"></i> History</a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/reservation.html"><i class="fa-solid fa-paper-plane"></i></a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/history.html"><i class="fa-solid fa-clock-rotate-left"></i></a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/login.html"><span><i class="fa-solid fa-arrow-right-from-bracket fa-flip-horizontal"></i></span></a></i></div>
+            </div>
+        </div> 
+        <!-- ======== RESERVATION FORM ======= --> 
+        <div class="container-reserv">
+                <h1>Reservasi Salon</h1>
+                <form id="reservationForm">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="service">Tipe Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="Haircuts and Styling">Haircuts and Styling</option>
+                        <option value="Manicure and Pedicure">Manicure and Pedicure</option>
+                        <option value="Facial Treatments">Facial Treatments</option>
+                    </select>
+
+                    <label for="datetime">Tanggal dan Waktu:</label>
+                    <input type="datetime-local" id="datetime" name="datetime" required>
+
+                    <button type="submit">Reservasi</button>
+                </form>
+               
+        </div>
+    </div>
+    
+    <script src="../JS/reservation.js"></script>
+</body>
+</html>

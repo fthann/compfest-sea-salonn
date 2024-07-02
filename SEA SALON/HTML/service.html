@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="../CSS/service.css">
+    <script src="https://kit.fontawesome.com/2642963cc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ======== NAVBAR ======= -->
+    <header>
+        <div class="container">
+            <h1>SEA SALON</h1>
+            <p>Admin</p>
+        </div>
+    </header>
+    <div class="reservation-dashboard">
+        <!-- ======== DASHBOARD ======= -->
+        <div class="dashboard">
+            <div class="dash-container">
+                <div class="reservation-button"><a href="../HTML/service.html"><i class="fa-solid fa-scissors"></i> Service</a></i></div>
+                <div class="reservation-button"><a href="../HTML/branch.html"><i class="fa-solid fa-plus"></i> Branch</a></i></div>
+                <div class="reservation-button"><a href="../HTML/branches.html"><i class="fa-solid fa-store"></i> Branches</a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/service.html"><i class="fa-solid fa-scissors"></i></a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/branch.html"><i class="fa-solid fa-plus"></i></a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/branches.html"><i class="fa-solid fa-store"></i></a></i></div>
+                <div class="reservation-button" id="icon"><a href="../HTML/login.html"><span><i class="fa-solid fa-arrow-right-from-bracket fa-flip-horizontal"></i></span></a></div>
+            </div>
+            <div class="dash-logout">
+                <div class="reservation-button-logout"><a href="../HTML/login.html"><i class="fa-solid fa-arrow-right-from-bracket fa-flip-horizontal"></i> Logout</a></div>
+            </div>
+        </div>  
+        <!-- ======== SERVICE DI ADMIN PAGE ======= -->
+        <div class="container-servicee">
+            <h1>Service Salon</h1>
+            <form id="serviceForm">
+                <label for="serviceName">Nama Service:</label>
+                <input type="text" id="serviceName" name="serviceName" required>
+    
+                <label for="sessionDuration">Durasi per Sesi (menit):</label>
+                <input type="number" id="sessionDuration" name="sessionDuration" required>
+    
+                <button type="submit">Tambah Service</button>
+            </form>
+            <div id="serviceContainer" class="service-container"></div>
+        </div>      
+    </div> 
+    <!-- ======== SERVICE ADMIN SCRIPT ======= -->
+    <script src="../JS/service.js"></script>   
+</body>
+</html>
